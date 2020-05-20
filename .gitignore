@@ -1,0 +1,12 @@
+# Libraries
+node_modules
+
+# Build
+build
+
+# Lock
+yarn.lock
+package-lock.json
+
+# Environment
+.env
