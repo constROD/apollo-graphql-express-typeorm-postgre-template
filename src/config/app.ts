@@ -6,7 +6,7 @@ export const APP_PORT = process.env.APP_PORT;
 export const APP_ZONE = process.env.APP_ZONE;
 
 /* GRAPHQL */
-export const GQL_PLAYGROUND = process.env.ZONE === "production" ? false : true;
+export const GQL_PLAYGROUND = process.env.APP_ZONE === "production" ? false : true;
 
 /* DB */
 export const DB_TYPE = process.env.DB_TYPE;
@@ -19,4 +19,4 @@ export const DB_SCHEMA = process.env.APP_ZONE;
 
 /* ORM */
 export const ORM_NAME = process.env.ORM_NAME;
-export const ORM_SYNCHRONIZE = process.env.ZONE === "production" ? false : true;
+export const ORM_SYNCHRONIZE = process.env.APP_ZONE === "production" ? false : true;
