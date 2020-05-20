@@ -1,5 +1,5 @@
 # Apollo GraphQL, Express, TypeORM and PostgreSQL Template
-This repo uses `tsc` for bundling
+This repo uses `tsc` for bundling all ts file
 
 # Installation
 ```
