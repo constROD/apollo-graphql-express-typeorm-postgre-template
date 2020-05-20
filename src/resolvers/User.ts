@@ -1,4 +1,4 @@
-import { useUserService } from "../services/User.service.ts";
+import { useUserService } from "../services/User.service";
 
 const { getUsers, getUser, addUser, updateUser, deleteUser } = useUserService();
 
