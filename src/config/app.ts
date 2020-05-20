@@ -5,6 +5,9 @@ dotenv.config();
 export const APP_PORT = process.env.APP_PORT;
 export const APP_ZONE = process.env.APP_ZONE;
 
+/* GRAPHQL */
+export const GQL_PLAYGROUND = process.env.ZONE === "production" ? true : false;
+
 /* DB */
 export const DB_TYPE = process.env.DB_TYPE;
 export const DB_HOST = process.env.DB_HOST;

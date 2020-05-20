@@ -6,7 +6,7 @@ import fs from "fs";
 import https from "https";
 import "reflect-metadata";
 import { createConnection } from "typeorm";
-import { APP_PORT, APP_ZONE } from "./config/app";
+import { APP_PORT, APP_ZONE, GQL_PLAYGROUND } from "./config/app";
 import { ORM_CONFIG } from "./config/ormconfig";
 import resolvers from "./resolvers";
 import typeDefs from "./typeDefs";
@@ -20,7 +20,7 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
   context: ({ req, res }: any) => ({ req, res }),
-  playground: true,
+  playground: GQL_PLAYGROUND,
 });
 
 server.applyMiddleware({ app });
