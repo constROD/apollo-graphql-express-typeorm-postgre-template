@@ -7,7 +7,7 @@
     "dev": "ts-node-dev --respawn --transpileOnly src/server.ts",
     "clean": "rm -rf build",
     "build": "yarn clean && tsc",
-    "local:deploy": "yarn build && node build/server.js",
+    "dev:deploy": "yarn build && node build/server.js",
     "prod:deploy": "yarn build && pm2 start --name 'prod:appname' build/server.js",
     "prod:restart": "yarn build && pm2 restart 'prod:appname'"
   },
